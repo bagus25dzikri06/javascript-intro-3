@@ -15,8 +15,8 @@ const cekHariKerja = (day) => {
 }
 
 //Menggunakan then-catch
-const workdayCheck = async (day) => {
-  await cekHariKerja(day).then((res) => {
+const workdayCheck = (day) => {
+  cekHariKerja(day).then((res) => {
     console.log(res)
   }).catch((err) => {
     console.log(err.message)
